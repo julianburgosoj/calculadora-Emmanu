@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Emmanú - Valora tu Arte con Amor</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de la fuente Inter y colores de marca -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Fondo suave y claro */
+            color: #333;
+        }
+        /* Colores de marca inspirados en tonos artesanales (Rosa suave y Púrpura/Azul profundo) */
+        .brand-primary {
+            background-color: #E9967A; /* Salmón claro / Rosa artesanal */
+        }
+        .text-brand-primary {
+            color: #E9967A;
+        }
+        .brand-secondary {
+            background-color: #6A5ACD; /* Azul pizarra / Púrpura profundo */
+        }
+        .text-brand-secondary {
+            color: #6A5ACD;
+        }
+        /* Estilo para iconos/elementos clave */
+        .icon-box {
+            @apply p-4 rounded-full bg-pink-100 text-brand-primary shadow-lg;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- 1. BARRA DE NAVEGACIÓN (HEADER) -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo y Nombre de Marca -->
+            <a href="#" class="flex items-center space-x-2">
+                <!-- Placeholder para logo.png -->
+                <img src="logo.png" alt="Logo Calculadora Emmanú" class="h-8 w-auto rounded-lg">
+                <span class="text-xl font-extrabold text-gray-800">322 4239169</span>
+            </a>
+            <!-- Botón de CTA Principal - REDIRIGIDO A WHATSAPP -->
+            <a href="https://wa.me/573224239169" target="_blank" class="px-5 py-2 brand-primary text-white font-semibold rounded-xl shadow-md hover:bg-opacity-90 transition duration-300">
+                ¡Calcula Ahora!
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. SECCIÓN HERO (La parte más importante: Título y Propuesta) -->
+    <section class="brand-secondary text-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Slogan/Lema -->
+            <p class="text-pink-200 text-lg font-medium mb-3 uppercase tracking-wider">
+                Valora tu arte. Calcula con amor.
+            </p>
+            <!-- Título Principal Atractivo -->
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                El Valor Justo para <span class="text-brand-primary">Cada Puntada</span>.
+            </h1>
+            <!-- Descripción de Apoyo -->
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto font-light">
+                La herramienta digital diseñada para artesanas y tejedoras que desean conocer el valor real de su trabajo sin complicaciones.
+            </p>
+            <!-- Botón de CTA Primario y Destacado - REDIRIGIDO A WHATSAPP -->
+            <a href="https://wa.me/573224239169" target="_blank" class="inline-block px-10 py-4 brand-primary text-white text-xl font-bold rounded-xl shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
+                Descubre el Precio de tu Obra
+            </a>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN DE CARACTERÍSTICAS (Detalle de lo que hace) -->
+    <section id="caracteristicas" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+                Características que Amamos
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Característica 1: Cronómetro de Horas -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-brand-primary">
+                    <div class="icon-box">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="mt-5 text-2xl font-semibold text-gray-900">
+                        Cronómetro Integrado
+                    </h3>
+                    <p class="mt-3 text-gray-600">
+                        Registra tus horas reales de trabajo con precisión. ¡Cada minuto cuenta! Olvídate de cálculos manuales al final del proyecto.
+                    </p>
+                </div>
+
+                <!-- Característica 2: Costos y Materiales -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-brand-secondary">
+                    <div class="icon-box">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243m-4.243 2.828L5.657 2.228m11.314 0l-4.243 4.243m-4.243-2.828l4.243 4.243m0 0l4.243 4.243m-8.486 0L10 10m-2 2h2"></path></svg>
+                    </div>
+                    <h3 class="mt-5 text-2xl font-semibold text-gray-900">
+                        Control de Costos
+                    </h3>
+                    <p class="mt-3 text-gray-600">
+                        Ingresa fácilmente los gastos de tus lanas, rellenos, ojos, empaque y presentación. Nunca más subestimes el costo de tus insumos.
+                    </p>
+                </div>
+
+                <!-- Característica 3: Valor Artesanal Único -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-brand-primary">
+                    <div class="icon-box">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h3 class="mt-5 text-2xl font-semibold text-gray-900">
+                        Porcentaje Único
+                    </h3>
+                    <p class="mt-3 text-gray-600">
+                        Añade un porcentaje adicional que refleje la exclusividad, la dificultad y el valor sentimental de tu pieza hecha a mano.
+                    </p>
+                </div>
+
+                <!-- Característica 4: Vista Previa y Galería -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-brand-secondary">
+                    <div class="icon-box">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-8-8h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="mt-5 text-2xl font-semibold text-gray-900">
+                        Previsualización
+                    </h3>
+                    <p class="mt-3 text-gray-600">
+                        Sube la foto de tu amigurumi terminado para tener una vista previa de tu creación y asociarla directamente con el cálculo.
+                    </p>
+                </div>
+
+                <!-- Característica 5: Lector de Patrones PDF -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-brand-primary">
+                    <div class="icon-box">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1v-3.25m-7.25 0h11.25M9.75 17H14.25M9.75 17v-3.25M14.25 17v-3.25M12 12V4M12 4a3 3 0 013 3v5a3 3 0 01-3 3M12 4a3 3 0 00-3 3v5a3 3 0 003 3"></path></svg>
+                    </div>
+                    <h3 class="mt-5 text-2xl font-semibold text-gray-900">
+                        Patrón Siempre Visible
+                    </h3>
+                    <p class="mt-3 text-gray-600">
+                        Carga y visualiza tu patrón en PDF directamente en la interfaz. ¡Teje y calcula sin cambiar de ventana!
+                    </p>
+                </div>
+
+                <!-- Característica 6: Resumen Descargable (PNG) -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-brand-secondary">
+                    <div class="icon-box">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-8-8h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="mt-5 text-2xl font-semibold text-gray-900">
+                        Resumen PNG Listo
+                    </h3>
+                    <p class="mt-3 text-gray-600">
+                        Obtén un resumen descargable en imagen (PNG) con todos los datos y el precio final de venta. ¡Perfecto para compartir o archivar!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN DE VALOR ÚNICO (Por qué Emmanú) -->
+    <section class="py-16 md:py-24 bg-pink-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
+            <!-- Imagen Placeholder -->
+            <div class="lg:w-1/2">
+                <img src="imagen_1.png" alt="[Imagen de una artesana sonriendo mientras teje]" class="w-full h-auto object-cover rounded-3xl shadow-2xl transform rotate-1 transition duration-500 ease-in-out hover:rotate-0">
+            </div>
+
+            <!-- Contenido Emocional -->
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+                    ¿Por qué elegir <span class="text-brand-primary">Emmanú</span>?
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Porque valorar tu trabajo es tan importante como crearlo. Cada puntada, cada hora y cada detalle cuentan.
+                </p>
+                <p class="text-2xl font-extrabold brand-secondary p-4 inline-block text-white rounded-lg shadow-md">
+                    Ponle un valor justo a lo que haces con tus manos y tu corazón.
+                </p>
+                <!-- Botón de CTA - REDIRIGIDO A WHATSAPP -->
+                <a href="https://wa.me/573224239169" target="_blank" class="mt-8 inline-block px-8 py-3 bg-gray-800 text-white font-semibold rounded-xl hover:bg-gray-700 transition duration-300 shadow-lg">
+                    Empieza a valorar tu arte
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TESTIMONIOS (Prueba Social) -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+                Lo que dicen nuestras <span class="text-brand-primary">Artesanas Felices</span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg border-l-4 border-brand-secondary">
+                    <p class="text-lg italic text-gray-700">
+                        "Antes dudaba de mis precios. Con Emmanú, calculo en minutos y vendo con total seguridad. ¡Es un cambio de juego!"
+                    </p>
+                    <p class="mt-4 font-semibold text-gray-900">- Lucía M. (Tejedora)</p>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg border-l-4 border-brand-secondary">
+                    <p class="text-lg italic text-gray-700">
+                        "El cronómetro es maravilloso. Ahora sé exactamente cuánto tiempo invierto. Mi negocio de amigurumis es más rentable."
+                    </p>
+                    <p class="mt-4 font-semibold text-gray-900">- Carmen R. (Amigurumi Artist)</p>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg border-l-4 border-brand-secondary">
+                    <p class="text-lg italic text-gray-700">
+                        "La función de PDF es genial, no tengo que estar abriendo y cerrando archivos. La mejor herramienta para artesanas."
+                    </p>
+                    <p class="mt-4 font-semibold text-gray-900">- Elena S. (Artesana de Fieltro)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. LLAMADA A LA ACCIÓN FINAL Y PRECIOS (CTA) -->
+    <section id="precio" class="py-20 md:py-32 brand-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
+                Deja de adivinar, <span class="text-brand-secondary">comienza a ganar.</span>
+            </h2>
+            <p class="text-2xl mb-10 font-light">
+                Calculadora Emmanú — La manera más fácil, práctica y bella de valorar tus creaciones.
+            </p>
+
+            <!-- Bloque de Precio (Cambio a Pago Único por solicitud del usuario) -->
+            <div class="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl mx-auto max-w-lg">
+                <p class="text-2xl font-bold mb-3">Acceso Total de por Vida</p>
+                <div class="flex justify-center items-end mb-6">
+                    <!-- Precio actualizado: 19.900 pesos colombianos -->
+                    <span class="text-6xl font-extrabold text-brand-secondary">$19.900</span>
+                    <span class="text-xl font-medium mb-1 ml-2">COP (Pago Único)</span>
+                </div>
+                <!-- Descripción actualizada para indicar el uso de por vida -->
+                <p class="mb-6 text-gray-600 font-semibold">
+                    ¡Una sola inversión! Descarga la calculadora y úsala de por vida. Incluye todas las funciones y futuras actualizaciones.
+                </p>
+                <!-- Botón de Compra - REDIRIGIDO A WHATSAPP con mensaje específico de compra -->
+                <a href="https://wa.me/573224239169?text=Hola%2C%20quiero%20comprar%20la%20Calculadora%20Emman%C3%BA%20de%20por%20vida%20por%20%2419.900%20COP." target="_blank" class="block w-full px-8 py-4 brand-secondary text-white text-xl font-bold rounded-xl shadow-lg hover:bg-opacity-90 transition duration-300 text-center">
+                    Comprar Acceso Único ($19.900 COP)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:flex md:justify-between md:items-center">
+            <!-- Copyright -->
+            <p class="text-sm">
+                &copy; 2026 Calculadora Emmanú. Todos los derechos reservados.
+            </p>
+            <!-- Enlaces del Footer -->
+            <div class="mt-4 md:mt-0 space-x-6 text-sm">
+                <!-- Nuevo enlace de TikTok -->
+                <a href="https://www.tiktok.com/@emmanucrochet" target="_blank" class="hover:text-brand-primary transition duration-300">TikTok</a>
+                <!-- <a href="#" class="hover:text-brand-primary transition duration-300">Términos</a> 
+                <a href="#" class="hover:text-brand-primary transition duration-300">Privacidad</a>
+                <a href="#" class="hover:text-brand-primary transition duration-300">Soporte</a> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript ajustado para no interferir con las redirecciones externas -->
+    <script>
+        /**
+         * Inicialización del script al cargar la página.
+         */
+        window.onload = function() {
+            // Muestra un mensaje en consola para indicar que la landing page está lista
+            console.log("Calculadora Emmanú Landing Page lista. ¡A tejer y calcular!");
+        };
+    </script>
+
+</body>
+</html>
